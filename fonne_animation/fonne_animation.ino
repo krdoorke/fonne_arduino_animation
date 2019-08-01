@@ -35,15 +35,17 @@ SimpleTimer timer;
 #define RELAY3 4                           // motor button right
 #define RELAY4 5                           // stroboscoop
 int motor_turn_time;                       // variable used to set motor turn time
-int const max_motor_turn_time = 2000;      // maximum time motor may turn
-int const max_motor_wait_time = 5000;      // maximum time motor should wait in between turn left and right
-int motor_wait_time;                       // variable used to set motor wait time
-int strobo_time;                           // variable used to set time stroboscoop run time
-int const min_strobo_time = 10000;         // minimal stroboscoop run time
-int const max_strobo_time = 30000;         // maximum stroboscoop run time
-long const motor_interval = 15000;         // timer interval for the motor_turn_left_right activation function
-long stroboscoop_interval = 600000;        // timer interval for the stroboscoop activation function
-int const relay_pulse_time = 200;          // pulse time for the motor buttons
+int const max_motor_turn_time = 2000;      // maximum time motor can turn (miliseconds)
+int const min_motor_turn_time = 500;       // minimal time motor should turn (miliseconds)
+int const max_motor_wait_time = 5000;      // maximum time motor should wait in between turn left and right (miliseconds)
+int const min_motor_wait_time = 250;       // minimal time motor should wait in between turn left and right (miliseconds)
+int motor_wait_time;                       // variable used to set motor wait time (miliseconds)
+int strobo_time;                           // variable used to set time stroboscoop run time (miliseconds)
+int const min_strobo_time = 10000;         // minimal stroboscoop run time (miliseconds)
+int const max_strobo_time = 30000;         // maximum stroboscoop run time (miliseconds)
+long const motor_interval = 15000;         // timer interval for the motor_turn_left_right activation function (miliseconds)
+long stroboscoop_interval = 600000;        // timer interval for the stroboscoop activation function (miliseconds)
+int const relay_pulse_time = 200;          // pulse time for the motor buttons (miliseconds)
 
 
 void setup()

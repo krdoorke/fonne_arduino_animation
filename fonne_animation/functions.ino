@@ -2,10 +2,10 @@
 void turn_motor_left_right()
 {
 Serial.println("selecting random motor turn time");
-motor_turn_time = random(max_motor_turn_time);
+motor_turn_time = random(min_motor_turn_time,max_motor_turn_time);
 Serial.println(motor_turn_time);
 Serial.println("selecting random motor wait time");
-motor_wait_time = random(max_motor_wait_time);
+motor_wait_time = random(min_motor_wait_time,max_motor_wait_time);
 Serial.println(motor_wait_time);
 Serial.println("activate button_left");
 digitalWrite(RELAY1,HIGH);                          // Turns ON Relays 1
