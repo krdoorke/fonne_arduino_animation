@@ -7,19 +7,19 @@ Serial.println(motor_turn_time);
 Serial.println("selecting random motor wait time");
 motor_wait_time = random(max_motor_wait_time);
 Serial.println(motor_wait_time);
-Serial.println("activeer knop_links");
+Serial.println("activate button_left");
 digitalWrite(RELAY1,HIGH);                          // Turns ON Relays 1
 delay(relay_pulse_time);
 digitalWrite(RELAY1,LOW);                           // Turns OFF Relays 1
 delay(motor_turn_time);                             // Wait x milliseconds
 
-Serial.println("activeer knop_stop"); 
+Serial.println("activate button_stop"); 
 digitalWrite(RELAY2,HIGH);                          // Turns ON Relays 2
 delay(relay_pulse_time);
 digitalWrite(RELAY2,LOW);                           // Turns OFF Relays 2
 delay(motor_wait_time);                             // Wait x milliseconds
 
-Serial.println("activeer knop_rechts"); 
+Serial.println("activate button_right"); 
 digitalWrite(RELAY3,HIGH);                          // Turns ON Relays 3
 delay(relay_pulse_time);
 digitalWrite(RELAY3,LOW);                           // Turns OFF Relays 3
