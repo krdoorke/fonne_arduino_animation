@@ -1,7 +1,7 @@
 # fonne_arduino_animation
 Some arduino code to animate the fonne feesten "bar 2"
 
-This code was written in summer 2019 to get some automation in the bar at the Fonne feesten festival.
+This code was written in summer 2019 to get some automation in the bar at the free "Fonne feesten" festival.
 
 We are using a motor with a control unit (Multifix Mel 4000), this motor is used to turn an armed prison guard in a watchtower from left to right.
 
